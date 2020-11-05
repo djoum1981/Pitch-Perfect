@@ -67,7 +67,7 @@ class RecordVC: UIViewController, AVAudioRecorderDelegate {
         if flag{
             performSegue(withIdentifier: Utility.sequeTransition, sender: audioRecorder.url)
         }else{
-            let alert = UIAlertController(title: "Error!", message: "Unable to record", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error!", message: Utility.errorMessage, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             self.present(alert, animated: true)
         }
