@@ -66,4 +66,9 @@ class PlayVC: UIViewController {
     @ IBAction func stopButtonPressed(_ sender: UIButton) {
         stopAudio()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        stopAudio()
+    }
 }
