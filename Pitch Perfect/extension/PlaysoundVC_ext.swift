@@ -127,7 +127,7 @@ extension PlayVC: AVAudioPlayerDelegate {
         }
         
         configureUI(.notPlaying)
-                        
+        
         if let audioEngine = audioEngine {
             audioEngine.stop()
             audioEngine.reset()
@@ -143,7 +143,7 @@ extension PlayVC: AVAudioPlayerDelegate {
     }
     
     // MARK: UI Functions
-
+    
     func configureUI(_ playState: PlayingState) {
         switch(playState) {
         case .playing:
@@ -163,7 +163,7 @@ extension PlayVC: AVAudioPlayerDelegate {
         echoButton.isEnabled = enabled
         reverbButton.isEnabled = enabled
     }
-
+    
     func showAlert(_ title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: Alerts.DismissAlert, style: .default, handler: nil))
