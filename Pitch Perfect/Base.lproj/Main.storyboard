@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V4c-HM-cCW">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RecordVC" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4Q-eU-5nD">
-                                <rect key="frame" x="16" y="60" width="288" height="404"/>
+                                <rect key="frame" x="16" y="48" width="448" height="256"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szF-kQ-q4a">
-                                        <rect key="frame" x="104" y="162" width="80" height="80"/>
+                                        <rect key="frame" x="184" y="88" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="3zn-HU-uKU"/>
                                             <constraint firstAttribute="width" constant="80" id="wAm-gV-zS6"/>
@@ -31,10 +31,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkE-IO-4yo">
-                                        <rect key="frame" x="121.5" y="269" width="45" height="45"/>
+                                        <rect key="frame" x="192" y="195" width="64" height="64"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="Ogi-Px-KIK"/>
-                                            <constraint firstAttribute="height" constant="45" id="hfV-nE-nZ4"/>
+                                            <constraint firstAttribute="width" constant="64" id="Ogi-Px-KIK"/>
+                                            <constraint firstAttribute="height" constant="64" id="hfV-nE-nZ4"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Stop"/>
                                         <connections>
@@ -42,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr0-Py-tvp">
-                                        <rect key="frame" x="105.5" y="243" width="77" height="18"/>
+                                        <rect key="frame" x="185.5" y="169" width="77" height="18"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -85,14 +85,14 @@
             <objects>
                 <viewController id="ro4-mo-GeH" customClass="PlayVC" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P7h-Fk-Dyf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-Ii-tag">
-                                <rect key="frame" x="8" y="52" width="320" height="436"/>
+                                <rect key="frame" x="8" y="40" width="480" height="288"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-mB-Abp">
-                                        <rect key="frame" x="85" y="130.5" width="150" height="175"/>
+                                        <rect key="frame" x="165" y="56.5" width="150" height="175"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="e7l-72-Bpl">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="45"/>
@@ -174,10 +174,10 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr4-wd-6an">
-                                        <rect key="frame" x="137.5" y="303" width="45" height="45"/>
+                                        <rect key="frame" x="210" y="220" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="Tky-0L-8cE"/>
-                                            <constraint firstAttribute="height" constant="45" id="WhK-2G-ZIO"/>
+                                            <constraint firstAttribute="width" constant="60" id="MGt-7p-m1X"/>
+                                            <constraint firstAttribute="height" constant="60" id="f4I-gv-AVh"/>
                                         </constraints>
                                         <state key="normal" image="Stop"/>
                                         <connections>
@@ -189,8 +189,8 @@
                                 <constraints>
                                     <constraint firstItem="Njh-mB-Abp" firstAttribute="centerX" secondItem="v7i-Ii-tag" secondAttribute="centerX" id="Bb6-AO-Bs4"/>
                                     <constraint firstItem="Njh-mB-Abp" firstAttribute="centerY" secondItem="v7i-Ii-tag" secondAttribute="centerY" id="DL2-hd-iG7"/>
-                                    <constraint firstItem="lr4-wd-6an" firstAttribute="top" secondItem="Njh-mB-Abp" secondAttribute="bottom" constant="-2.5" id="FAP-Jf-qWO"/>
-                                    <constraint firstItem="lr4-wd-6an" firstAttribute="centerX" secondItem="Njh-mB-Abp" secondAttribute="centerX" id="fVy-rA-N3M"/>
+                                    <constraint firstItem="lr4-wd-6an" firstAttribute="top" secondItem="Njh-mB-Abp" secondAttribute="bottom" constant="-11.5" id="Zim-En-iGD"/>
+                                    <constraint firstItem="lr4-wd-6an" firstAttribute="centerX" secondItem="Njh-mB-Abp" secondAttribute="centerX" id="yyp-dp-QgV"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -224,7 +224,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V4c-HM-cCW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TUj-Fx-H9h">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="32"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
